@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Моя страница с книгами</title>
+    <style>
+        body {
+            background-color: pink; 
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+        }
+
+        .book-container {
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            margin-top: 20px;
+        }
+
+        .book {
+            margin-bottom: 20px;
+        }
+
+        .book a {
+            color: white;
+            font-size: 18px;
+            text-decoration: none;
+        }
+        ul {
+            list-style-type: none;
+            margin: 10;
+            padding: 10;
+            background-color: #ff69b4;
+            overflow: hidden;
+        }
+        
+        li {
+            float: left;
+        }
+        
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        li a:hover {
+            background-color: #ff1493;
+        }
+        
+        #content {
+            margin-top: 20px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="glavnaya.html">Главная</a></li>
+        <li><a href="zadachi.html">Задачи</a></li>
+        <li><a href="registratsiya.html">Форма регистрации</a></li>
+        <li><a href="avtorizatsya.html">Авторизация</a></li>
+        <li><a href="otziv.html">Форма обратной связи</a></li>
+        <li><a href="test.html">Тест</a></li>
+        <li><a href="animatsiya.html">Анимация</a></li>
+        <li><a href="modelka.html">Модель</a></li>
+        <li><a href="video.html">Видеоуроки</a></li>
+        <li><a href="booki.html">Книги</a></li>
+        <li><a href="obomne.html">Об авторе</a></li>
+    </ul>
+    <h2>Книги и литература по теме "Проверка уравнения состояния идеального газа"</h2>
+
+    <div class="book-container" id="bookContainer">
+    </div>
+
+    <script>
+        // Создание массива с информацией о книгах
+        var books = [
+            {
+                title: "Уравнение состояния идеального газа.Материал из Википедии",
+                link: "https://ru.wikipedia.org/wiki/Уравнение_состояния_идеального_газа"
+            },
+            {
+                title: "obrazovaka.ru",
+                link: "https://obrazovaka.ru/fizika/uravnenie-sostoyaniya-idealnogo-gaza-vyvod.html"
+            },
+            {
+                title: "resh.edu.ru",
+                link: "https://resh.edu.ru/subject/lesson/6292/conspect/325553/"
+            },
+            {
+                title: "mathus.ru",
+                link: "https://mathus.ru/phys/idealgas.pdf"
+            }
+        ];
+
+        // Получение контейнера для книг
+        var bookContainer = document.getElementById("bookContainer");
+
+        // Добавление книг в контейнер
+        books.forEach(function(book) {
+            var bookDiv = document.createElement("div");
+            bookDiv.className = "book";
+
+            var link = document.createElement("a");
+            link.href = book.link;
+            link.textContent = book.title;
+
+            bookDiv.appendChild(link);
+
+            bookContainer.appendChild(bookDiv);
+        });
+    </script>
+</body>
+</html>
+

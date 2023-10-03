@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Видеоуроки</title>
+    <style>
+        body {
+            background-color: pink;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+        }
+
+        .video-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .video {
+            margin-bottom: 20px;
+        }
+
+        .video iframe {
+            width: 560px;
+            height: 315px;
+        }
+
+        .description {
+            color: white;
+            font-size: 18px;
+            text-align: center;
+        }
+        ul {
+            list-style-type: none;
+            margin: 10;
+            padding: 10;
+            background-color: #ff69b4;
+            overflow: hidden;
+        }
+        
+        li {
+            float: left;
+        }
+        
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        li a:hover {
+            background-color: #ff1493;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="glavnaya.html">Главная</a></li>
+        <li><a href="zadachi.html">Задачи</a></li>
+        <li><a href="registratsiya.html">Форма регистрации</a></li>
+        <li><a href="avtorizatsya.html">Авторизация</a></li>
+        <li><a href="otziv.html">Форма обратной связи</a></li>
+        <li><a href="test.html">Тест</a></li>
+        <li><a href="animatsiya.html">Анимация</a></li>
+        <li><a href="modelka.html">Модель</a></li>
+        <li><a href="video.html">Видеоуроки</a></li>
+        <li><a href="booki.html">Книги</a></li>
+        <li><a href="obomne.html">Об авторе</a></li>
+    </ul>
+    <h1>Видеоматериал</h1>
+
+    <div class="video-container">
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/N8RpIGy_6OA?si=zQdskv1kleD6IX86" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <p class="description">Уравнение состояния идеального газа.ИнфоУрок.</p>
+        </div>
+
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/_SAujKj20B4?si=8mDOsCcT77EdQL4T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <p class="description">Уравнение состояния идеального газа.Практическая часть.</p>
+        </div>
+    </div>
+
+</body>
+</html>
+

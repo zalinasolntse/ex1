@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    body {
+        background-color: pink;
+        font-family: Arial, sans-serif;
+    }
+    
+    ul {
+        list-style-type: none;
+        margin: 10;
+        padding: 10;
+        background-color: #ff69b4;
+        overflow: hidden;
+    }
+    
+    li {
+        float: left;
+    }
+    
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    
+    li a:hover {
+        background-color: #ff1493;
+    }
+    
+    #content {
+        margin-top: 20px;
+        text-align: center;
+    }
+</style>
+<body>
+    <ul>
+        <li><a href="glavnaya.html">Главная</a></li>
+        <li><a href="zadachi.html">Задачи</a></li>
+        <li><a href="registratsiya.html">Форма регистрации</a></li>
+        <li><a href="avtorizatsya.html">Авторизация</a></li>
+        <li><a href="otziv.html">Форма обратной связи</a></li>
+        <li><a href="test.html">Тест</a></li>
+        <li><a href="animatsiya.html">Анимация</a></li>
+        <li><a href="modelka.html">Модель</a></li>
+        <li><a href="video.html">Видеоуроки</a></li>
+        <li><a href="booki.html">Книги</a></li>
+        <li><a href="obomne.html">Об авторе</a></li>
+    </ul>
+    <section id="test">
+        <h2>Тест</h2>
+        <p>Вопрос 1: Назови макроскопические параметры:</p>
+        <input type="text" id="answer1"><br><br>
+        
+        <p>Вопрос 2: Идеальным называют газ:</p>
+        <input type="checkbox" id="answer2a" name="answer2" value="a">
+        <label for="answer2a"> массой молекул которого можно пренебречь</label><br>
+        <input type="checkbox" id="answer2b" name="answer2" value="b">
+        <label for="answer2b">размерами молекул которого можно пренебречь</label><br>
+        <input type="checkbox" id="answer2c" name="answer2" value="c">
+        <label for="answer2c">взаимодействием между молекулами которого можно пренебречь</label><br><br>
+        
+        <p>Вопрос 3: Средняя кинетическая энергия теплового движения молекул водорода увеличилась в 2 раза. Давление водорода при этом</p>
+        <input type="radio" id="answer3a" name="answer3" value="a">
+        <label for="answer3a"> не изменилось</label><br>
+        <input type="radio" id="answer3b" name="answer3" value="b">
+        <label for="answer3b">увеличилось в 2 раза</label><br>
+        <input type="radio" id="answer3c" name="answer3" value="c">
+        <label for="answer3c">увеличилось в 4 раза</label><br><br>
+
+        <p>Вопрос 4: Идеальным называют газ:</p>
+        <input type="checkbox" id="answer4a" name="answer4" value="a">
+        <label for="answer4a">молекулы которого движутся с одинаковыми скоростями</label><br>
+        <input type="checkbox" id="answer4b" name="answer4" value="b">
+        <label for="answer4b"> размерами молекул которого можно пренебречь</label><br>
+        <input type="checkbox" id="answer4c" name="answer4" value="c">
+        <label for="answer4c">взаимодействием между молекулами которого можно пренебречь</label><br><br>
+        
+        <p>Вопрос 5: При каких процессах наблюдается линейная зависимость между двумя макропараметрами идеального газа? </p>
+        <input type="checkbox" id="answer5a" name="answer5" value="a">
+        <label for="answer5a">Изотермический</label><br>
+        <input type="checkbox" id="answer5b" name="answer5" value="b">
+        <label for="answer5b">Изобарный</label><br>
+        <input type="checkbox" id="answer5c" name="answer5" value="c">
+        <label for="answer5c">Изохорный</label><br><br>
+        
+        <p>Вопрос 6: Из предложенных формул выбери уравнение состояния идеального газа:</p>
+        <input type="radio" id="answer6a" name="answer6" value="a">
+        <label for="answer6a">PV = m/MRT</label><br>
+        <input type="radio" id="answer6b" name="answer6" value="b">
+        <label for="answer6b">P = 2/3nE</label><br>
+        <input type="radio" id="answer6c" name="answer6" value="c">
+        <label for="answer6c">PV = 3/2kT</label><br><br>
+        
+        <p>Вопрос 7: Процесс изменения состояния термодинамической системы макроскопических тел при постоянной температуре называется…</p>
+        <input type="radio" id="answer7a" name="answer7" value="a">
+        <label for="answer7a">изотермический</label><br>
+        <input type="radio" id="answer7b" name="answer7" value="b">
+        <label for="answer7b">изобарный</label><br>
+        <input type="radio" id="answer7c" name="answer7" value="c">
+        <label for="answer7c">изохорный</label><br><br>
+          
+        <p>Вопрос 8: Средний квадрат скорости молекул водорода уменьшился в 2 раза. Давление водорода:</p>
+        <input type="radio" id="answer8a" name="answer8" value="a">
+        <label for="answer8a"> не изменилось</label><br>
+        <input type="radio" id="answer8b" name="answer8" value="b">
+        <label for="answer8b">увеличилось в 4 раза</label><br>
+        <input type="radio" id="answer8c" name="answer8" value="c">
+        <label for="answer8c">уменьшилось в 2 раза</label><br><br>
+
+        <p>Вопрос 9: Кислород массой 0,08 кг находится в сосуде объёмом 8,3 м3 при температуре 400 К. Давление кислорода в сосуде равно</p>
+        <input type="text" id="answer9"><br><br>
+       
+        <p>Вопрос 10:  Водород массой 0,04 кг находится в сосуде объёмом 8,3 м3 при температуре 300 К. Давление водорода в сосуде равно</p>
+        <input type="text" id="answer10"><br><br>
+
+        <button onclick="checkAnswers()">Проверить ответы</button>
+        <p id="test-info"></p>
+    </section>
+
+    
+    <script>
+        function checkAnswers() {
+            var answer1  = document.getElementById("answer1").value;
+            var answer2a = document.getElementById("answer2a").checked;
+            var answer2b = document.getElementById("answer2b").checked;
+            var answer2c = document.getElementById("answer2c").checked;
+            var answer3a = document.getElementById("answer3a").checked;
+            var answer3b = document.getElementById("answer3b").checked;
+            var answer3c = document.getElementById("answer3c").checked;
+            var answer4a = document.getElementById("answer4a").checked;
+            var answer4b = document.getElementById("answer4b").checked;
+            var answer4c = document.getElementById("answer4c").checked;
+            var answer5a = document.getElementById("answer5a").checked;
+            var answer5b = document.getElementById("answer5b").checked;
+            var answer5c = document.getElementById("answer5c").checked;
+            var answer6a = document.getElementById("answer6a").checked;
+            var answer6b = document.getElementById("answer6b").checked;
+            var answer6c = document.getElementById("answer6c").checked;
+            var answer7a = document.getElementById("answer7a").checked;
+            var answer7b = document.getElementById("answer7b").checked;
+            var answer7c = document.getElementById("answer7c").checked;
+            var answer8a = document.getElementById("answer8a").checked;
+            var answer8b = document.getElementById("answer8b").checked;
+            var answer8c = document.getElementById("answer8c").checked;
+            var answer9  = document.getElementById("answer9").value;
+            var answer10 = document.getElementById("answer10").value;
+            var correctAnswers = 0;
+            
+            if (answer1.toLowerCase() === "давление,объем,температура") {
+                correctAnswers++;
+            }
+           
+            if (!answer2a && answer2b && answer2c) {
+                correctAnswers++;
+            }
+             if (answer3b) {
+                correctAnswers++;
+            }
+            if (!answer4a && answer4b && answer4c) {
+                correctAnswers++;
+            }
+            if (answer5a && !answer5b && !answer5c) {
+                correctAnswers++;
+            }
+            if (answer6a) {
+                correctAnswers++;
+            }
+            if (answer7a) {
+                correctAnswers++;
+            }
+            if (answer8c) {
+                correctAnswers++;
+            }
+             if (answer9.toLowerCase() === "1000") {
+                correctAnswers++;
+            }
+            if (answer10.toLowerCase() === "6000") {
+                correctAnswers++;
+            }
+            document.getElementById("test-info").innerHTML = "Количество правильных ответов: " + correctAnswers;
+        }
+    </script>
+</body>
+</html>
